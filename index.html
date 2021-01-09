@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js" id="confetti"></script>
+  <title>2048</title>
+</head>
+
+<body>
+  <div class="page-frame">
+    <h1>2048</h1>
+    <div class="gamearea">
+      <div class="gameboard">
+        <div class="grid"></div>
+      </div>
+      <div class="instructions">
+        <h3>How to play:</h3>
+        <p id="symbols">⬆️ ⬇️ ⬅️ ➡️</p>
+        <p>Use arrow keys to shift the tiles.</p>
+        <p>Adjacent matching tiles will combine.</p>
+        <p>Can you create the 2048 tile?</p>
+      </div>
+    </div>
+  </div>
+  <div id="popup"></div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
