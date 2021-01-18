@@ -14,17 +14,28 @@
 
 <body>
   <div class="page-frame">
-    <h1>2048</h1>
+    <div class="heading">
+      <h1>2048</h1>
+      <div class="options">
+        <select name="Board Size" id="boardSize">
+          <option value="3"> 3 x 3</option>
+          <option selected value="4">4 x 4</option>
+          <option value="5">5 x 5</option>
+        </select>
+      </div>
+
+    </div>
     <div class="gamearea">
       <div class="gameboard">
         <div class="grid"></div>
       </div>
       <div class="instructions">
         <h3>How to play:</h3>
-        <p id="symbols">⬆️ ⬇️ ⬅️ ➡️</p>
-        <p>Use arrow keys to shift the tiles.</p>
-        <p>Adjacent matching tiles will combine.</p>
-        <p>Can you create the 2048 tile?</p>
+        <p class="text-scr" id="symbols">⬆️ ⬇️ ⬅️ ➡️</p>
+        <p class="text-scr">Use arrow keys to shift the tiles.</p>
+        <p class="text-scr">Adjacent matching tiles will combine.</p>
+        <p class="text-scr">Can you create the 2048 tile?</p>
+        <p class="text-mob">Swipe to shift tiles. Adjacent matching tiles will merge. Can you create the 2048 tile?</p>
       </div>
     </div>
   </div>

@@ -1,15 +1,34 @@
 * {
   box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
   background-image: linear-gradient(to bottom right, #ffe5b4, #ffb6c1);
-  
   padding: 10px;
 }
 
+/* @media only screen and (max-width: 400px) {
+  body {
+    max-height: 100vh;
+  }
+} */
+
 .page-frame {
   height: 100vh;
+}
+
+.heading {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .heading {
+    flex-flow: column nowrap;
+  }
 }
 
 h1 {
@@ -18,12 +37,36 @@ h1 {
   font-family: 'Bungee', cursive;
   font-size: 70px;
   margin: 1%;
+  padding-right: 5vw;
+}
+
+#boardSize {
+  font-size: 30px;
+  padding: 10px;
+  font-family: 'Comfortaa', cursive;
+}
+
+@media only screen and (max-width: 400px) {
+  #boardSize {
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+  }
 }
 
 div.gamearea {
   width: 90vw;
   display: flex;
   flex-flow: row nowrap;
+}
+@media only screen and (max-width: 400px) {
+  div.gamearea {
+    width: 90vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 
 div.gameboard {
@@ -38,6 +81,15 @@ div.instructions {
   width: 30%;
   padding: 5% 2%;
 }
+@media only screen and (max-width: 400px) {
+  div.instructions {
+    width: 100%;
+    padding: 5% 2%;
+  }
+  div.gameboard {
+    width: 90%;
+  }
+}
 
 .instructions h3 {
   color: indigo;
@@ -47,11 +99,28 @@ div.instructions {
   font-family: 'Comfortaa', cursive;
 }
 
-.instructions p {
+.text-scr {
   margin-top: 2%;
   font-size: 24px;
   text-align: center;
   font-family: 'Comfortaa', cursive;
+}
+
+.text-mob {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .text-scr {
+    display: none;
+  }
+  .text-mob {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 1%;
+  }
 }
 
 #symbols {
@@ -70,6 +139,17 @@ div.instructions {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .instructions p {
+    margin-top: 0%;
+    font-size: 18px;
+  }
+
+  #symbols {
+    display: none;
+  }
+}
+
 .grid {
   display: flex;
   flex-flow: row wrap;
@@ -79,11 +159,18 @@ div.instructions {
   max-height: 80vh;
   max-width: 80vh;
 }
+@media only screen and (max-width: 400px) {
+  .grid {
+    width: 80vw;
+    height: 80vw;
+    padding: 2%;
+  }
+}
 
 .cell {
-  height: 25%;
+  /* height: 25%; */
   border: 2px solid grey;
-  width: 25%;
+  /* width: 25%; */
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -146,7 +233,7 @@ div.instructions {
 #popup {
   visibility: hidden;
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
-  height: 110vh;
+  height: 0px;
   width: 100vw;
   transform: translate(-1vw,-110vh);
   padding: 5vw;
