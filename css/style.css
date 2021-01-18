@@ -10,12 +10,14 @@ body {
 
 @media only screen and (max-width: 400px) {
   body {
-    max-height: 100vh;
+    max-height: 95vh;
+    padding: 0px;
   }
 }
 
 .page-frame {
-  height: 100vh;
+  height: 95vh;
+  padding: 0px;
 }
 
 .heading {
