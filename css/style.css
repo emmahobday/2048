@@ -8,11 +8,11 @@ body {
   padding: 10px;
 }
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   body {
     max-height: 100vh;
   }
-} */
+}
 
 .page-frame {
   height: 100vh;
@@ -25,11 +25,11 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   .heading {
     flex-flow: column nowrap;
   }
-}
+} */
 
 h1 {
   text-align: center;
@@ -47,8 +47,11 @@ h1 {
 }
 
 @media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 50px;
+  }
   #boardSize {
-    font-size: 22px;
+    font-size: 20px;
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
@@ -84,7 +87,7 @@ div.instructions {
 @media only screen and (max-width: 400px) {
   div.instructions {
     width: 100%;
-    padding: 5% 2%;
+    /* padding: 5% 2%; */
   }
   div.gameboard {
     width: 90%;
@@ -111,6 +114,9 @@ div.instructions {
 }
 
 @media only screen and (max-width: 400px) {
+  h3 {
+    display: none;
+  }
   .text-scr {
     display: none;
   }
